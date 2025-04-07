@@ -16,6 +16,7 @@ BOT_TOKEN = os.getenv('BOT_TOKEN')
 # Search command
 async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
+# Xyu
     while True:
         data = parse()
         for xata in data:
