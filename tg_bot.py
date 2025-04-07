@@ -30,7 +30,7 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await asyncio.sleep(1)
             except RetryAfter as _:
                 await asyncio.sleep(60)
-                text = create_text(data[xata])
+                text = create_text(xata)
                 await context.bot.send_message(
                     chat_id=update.effective_chat.id,
                     text=text
