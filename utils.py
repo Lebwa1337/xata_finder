@@ -1,4 +1,10 @@
+from pathlib import Path
+
+file_path = Path("data.txt")
+
 def check_if_already_sent(url):
+    if not file_path.exists():
+        file_path.touch()
     with open("data.txt", "r+") as f:
         file = f.read()
         if url in file:
