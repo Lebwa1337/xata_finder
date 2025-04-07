@@ -14,7 +14,7 @@ def parse():
 
         target_divs = soup.find_all('div', class_='css-l9drzq')
 
-        for i, div in enumerate(target_divs):
+        for div in target_divs:
             inner_divs = div.find_all('div', class_='css-1apmciz')
             for inner_div in inner_divs:
                 link = inner_div.find("a", class_='css-1tqlkj0', href=True)
